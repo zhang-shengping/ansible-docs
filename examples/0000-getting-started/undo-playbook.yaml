@@ -5,6 +5,7 @@
   connection: local
 
   vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
     provider:
       password: "{{ f5_password }}"
       server: "{{ ansible_host }}"
@@ -18,14 +19,14 @@
         provider: "{{ provider }}"
         name: vip-1
         state: absent
-      delegate_to: localhost
+      # delegate_to: localhost
 
     - name: Destroy a pool
       bigip_pool:
         provider: "{{ provider }}"
         name: web
         state: absent
-      delegate_to: localhost
+      # delegate_to: localhost
 
     - name: Delete nodes
       bigip_node:
@@ -35,4 +36,4 @@
       loop:
         - web01
         - web02
-      delegate_to: localhost
+      # delegate_to: localhost

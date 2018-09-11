@@ -1,10 +1,11 @@
 ---
 
-ansible_host: localhost
+ansible_host: 10.145.114.230
 f5_username: admin
-f5_password: admin
+f5_password: Passw0rd
 f5_server_port: 443
 validate_certs: no
+ansible_playbook_python: /root/f5-venv/bin/python
 
 # Typically not needed, but included here because F5's test infra uses
 # a python interpreter in a docker container
