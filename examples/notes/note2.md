@@ -13,4 +13,11 @@ B way:
 1. For Production Env: https://activate.f5.com/license
 2. For Production Dev Env: https://license.f5net.com/license
 
-**to get register key from: https://license.f5net.com**
+*to get register key from: https://license.f5net.com*
+
+### reference:
+ansible doc: https://docs.ansible.com/ansible/2.6/dev_guide/developing_modules_general.html
+             https://docs.ansible.com/ansible/2.5/user_guide/playbooks_debugger.html
+             https://docs.ansible.com/ansible/devel/dev_guide/debugging.html
+
+
