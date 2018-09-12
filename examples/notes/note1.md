@@ -10,6 +10,7 @@ B way:
 2. delete all the things defined in way A
 
 Notes:
+when use `connection: local`, the `hosts: XXXX` in play is disabled.
 node name in inventory should not the same as local or 127.0.0.1, when local define in playbook
 
 ### refer:
