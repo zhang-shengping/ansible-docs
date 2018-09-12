@@ -5,6 +5,7 @@
   connection: local
 
   vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
     provider:
       password: "{{ f5_password }}"
       server: "{{ ansible_host }}"
@@ -15,6 +16,7 @@
   tasks:
     - name: License a BIG-IP
       bigip_device_license:
-        license_key: XXXXX-XXXXX-XXXXX-XXXXX-XXXXXXX
+        license_key: BIG-IP PD KEY XXXXX
+        license_server: "license.f5net.com"
         accept_eula: yes
         provider: "{{ provider }}"

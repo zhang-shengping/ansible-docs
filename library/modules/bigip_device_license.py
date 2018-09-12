@@ -127,6 +127,7 @@ except ImportError:
 
 class LicenseXmlParser(object):
     def __init__(self, content=None):
+        # import pdb;pdb.set_trace()
         self.raw_content = content
         try:
             self.content = xml.etree.ElementTree.fromstring(content)
@@ -441,6 +442,7 @@ class ModuleManager(object):
                 continue
 
             try:
+                # import pdb; pdb.set_trace()
                 resp = LicenseXmlParser(content=resp._content)
                 result = resp.json()
             except F5ModuleError as ex:
@@ -655,6 +657,7 @@ class ArgumentSpec(object):
 
 
 def main():
+    # import pdb;pdb.set_trace()
     spec = ArgumentSpec()
 
     module = AnsibleModule(

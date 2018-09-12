@@ -1,0 +1,15 @@
+{"ANSIBLE_MODULE_ARGS": 
+  {
+   "provider":
+    {
+	"server": "10.145.122.69",
+	"user": "admin",
+	"password": "admin",
+	"server_port": 8443,
+	"validate_certs": "no"
+     },
+   "license_key": "PD-KEY-XXXXX",
+   "accept_eula": true,
+   "license_server": "license.f5net.com"
+  }
+}
